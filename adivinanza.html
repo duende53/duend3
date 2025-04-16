@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanzas Cubanas | Bolitacubana</title>
+    <style>
+        :root {
+            --main-color: #e74c3c;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --container-width: 600px;
+            --image-size: 80px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #57b322;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+        }
+        
+        .container {
+            max-width: var(--container-width);
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .puzzle-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+        }
+        
+        .puzzle-item {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .puzzle-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .puzzle-content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .puzzle-image {
+            width: var(--image-size);
+            height: var(--image-size);
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .puzzle-text {
+            flex: 1;
+        }
+        
+        .puzzle-title {
+            font-size: 1.1rem;
+            color: var(--main-color);
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .puzzle-subtitle {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .puzzle-riddle {
+            background-color: var(--light-gray);
+            padding: 15px 20px;
+            font-style: italic;
+            border-left: 4px solid var(--main-color);
+        }
+        
+        .puzzle-riddle p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .puzzle-riddle .solution {
+            font-weight: bold;
+            color: var(--main-color);
+            font-style: normal;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Compañía el Duende</h1>
+            <p>Adivinanza de las loterías de Florida, Georgia y Miami a las 10 am</p>
+        </div>
+        
+        <div class="puzzle-container">
+            <!-- Adivinanza 1 -->
+            <div class="puzzle-item">
+                <div class="puzzle-content">
+                    <img src="https://i.ibb.co/cSWJxMnY/photo-5186279851982696066-y.jpg" alt="Adivinanza 1" class="puzzle-image">
+                    <div class="puzzle-text">
+                        <h3 class="puzzle-title">Adivinanza Miami 10 am</h3>
+                        <p class="puzzle-subtitle">16/4/2025 (10 AM) 🌞</p>
+                    </div>
+                </div>
+                <div class="puzzle-riddle">
+                    <p>No se puede tocar ni sostener, pero se puede sentir en la piel, ¿qué es?</p>
+                </div>
+            </div>
+            
+            <!-- Adivinanza 2 -->
+            <div class="puzzle-item">
+                <div class="puzzle-content">
+                    <img src="https://i.ibb.co/XxYXQcGY/photo-5186279851982696067-x.jpg" alt="Adivinanza 2" class="puzzle-image">
+                    <div class="puzzle-text">
+                        <h3 class="puzzle-title">Adivinanza Georgia </h3>
+                        <p class="puzzle-subtitle">16/4/2025 (12:30 p. m.) 🌞</p>
+                    </div>
+                </div>
+                <div class="puzzle-riddle">
+                    <p>Tiene doce compañeros pero no es un equipo, aparece cada mes pero no está en un calendario.
+</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Adivinanza 3 -->
+            <div class="puzzle-item">
+                <div class="puzzle-content">
+                    <img src="https://i.ibb.co/tw0zh1W8/photo-5186279851982696068-y.jpg" alt="Adivinanza 3" class="puzzle-image">
+                    <div class="puzzle-text">
+                        <h3 class="puzzle-title">Adivinanza Florida</h3>
+                        <p class="puzzle-subtitle">16/4/2025 (13:30) 🌞</p>
+                    </div>
+                </div>
+                <div class="puzzle-riddle">
+                    <p>El grillo cantaba tan fuerte que los pulgones salían corriendo.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Bolitacubana - Todas las adivinanzas son de dominio popular</p>
+        </footer>
+    </div>
+</body>
+</html>
